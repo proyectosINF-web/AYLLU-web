@@ -120,7 +120,7 @@ header {
     padding: 2px 8px;
     border-radius: 10px;
     margin-left: auto;
-    font-weight: 700;
+    font-weight: 500;
     animation: pulse 2s infinite;
 }
 
@@ -1784,4 +1784,5 @@ footer::before {
     .footer-contact p {
         justify-content: center;
     }
+
 }
