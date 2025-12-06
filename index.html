@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYLLU RIEGO - Sistema de Riego Inteligente asistido por IA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="logo_1.jpeg" alt="Logo Ayllu Riego" class="logo-img">
+                    <div class="logo-text">
+                        <h1>AYLLU RIEGO</h1>
+                        <p>Cultivando a Futuro, Optimizando Cada Gota</p>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#mision-vision">Misión y Visión</a></li>
+                    <li><a href="#problema">El Problema</a></li>
+                    <li><a href="#solucion">Nuestra Solución</a></li>
+                    <li><a href="#valores">Nuestros Valores</a></li>
+                    <li><a href="#usuario">Para el Agricultor</a></li>
+                    <li><a href="#modelo">Modelo de Negocio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <h2>Sistema de Riego para Cultivos asistido por IA</h2>
+            <p>Transformamos la agricultura tradicional mediante tecnología de precisión, optimizando cada gota de agua para garantizar cosechas abundantes y sostenibles.</p>
+            <a href="#solucion" class="btn">Conoce Nuestra Solución</a>
+            <a href="#contacto" class="btn btn-secondary">Contáctanos</a>
+        </div>
+    </section>
+
+    <!-- Misión y Visión Section -->
+    <section class="mission-vision" id="mision-vision">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestra Filosofía</h2>
+                <p>La base de AYLLU RIEGO que guía cada una de nuestras acciones y decisiones</p>
+            </div>
+            
+            <div class="mission-vision-tabs">
+                <button class="mv-tab-btn active" data-mv-tab="mision">Misión</button>
+                <button class="mv-tab-btn" data-mv-tab="vision">Visión</button>
+                <button class="mv-tab-btn" data-mv-tab="principios">Principios</button>
+            </div>
+            
+            <div id="mision" class="mv-tab-content active">
+                <div class="mv-content-card">
+                    <div class="mv-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Misión</h3>
+                    <p class="mv-statement">Proveer sistemas de riego inteligentes a las comunidades rurales, para impulsar la eficiencia hídrica y la productividad agrícola en la región.</p>
+                    
+                    <div class="mv-details">
+                        <h4>Cómo lo logramos:</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Implementamos sistemas de riego de precisión asistidos por IA</li>
+                            <li><i class="fas fa-check-circle"></i> Capacitamos a las comunidades en el uso responsable del agua</li>
+                            <li><i class="fas fa-check-circle"></i> Desarrollamos soluciones accesibles y culturalmente adaptadas</li>
+                            <li><i class="fas fa-check-circle"></i> Promovemos prácticas agrícolas sostenibles y resilientes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="vision" class="mv-tab-content">
+                <div class="mv-content-card">
+                    <div class="mv-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Visión</h3>
+                    <p class="mv-statement">Ser la startup global referente para la provisión de sistemas de riego para el año 2030, exportando desde Bolivia nuestro modelo de adaptación andina a regiones como Perú, Ecuador y Colombia.</p>
+                    
+                    <div class="mv-details">
+                        <h4>Nuestras metas a 2030:</h4>
+                        <ul>
+                            <li><i class="fas fa-chart-line"></i> Implementar sistemas en 500+ comunidades agrícolas</li>
+                            <li><i class="fas fa-tint"></i> Reducir el consumo de agua en agricultura en un 40%</li>
+                            <li><i class="fas fa-seedling"></i> Aumentar la productividad agrícola en un 60%</li>
+                            <li><i class="fas fa-users"></i> Capacitar a 10,000 agricultores en riego inteligente</li>
+                            <li><i class="fas fa-award"></i> Ser reconocidos como referentes en innovación agrícola sostenible</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="principios" class="mv-tab-content">
+                <div class="mv-content-card">
+                    <div class="mv-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Principios Fundamentales</h3>
+                    <p class="mv-statement">Los pilares que guían todas nuestras acciones y decisiones empresariales</p>
+                    
+                    <div class="principles-grid">
+                        <div class="principle-card">
+                            <div class="principle-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h4>Tecnología al Servicio de la Tierra</h4>
+                            <p>Implementamos soluciones innovadoras (IA, IoT, Sensores) no para reemplazar, sino para potenciar el conocimiento local y garantizar la máxima eficiencia del recurso hídrico.</p>
+                        </div>
+                        
+                        <div class="principle-card">
+                            <div class="principle-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h4>Sostenibilidad Hídrica y Ambiental</h4>
+                            <p>Priorizamos la conservación del agua y el cuidado del ecosistema. Cada solución debe contribuir a la reducción del consumo y a la regeneración de los suelos.</p>
+                        </div>
+                        
+                        <div class="principle-card">
+                            <div class="principle-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Enfoque Comunitario (Ayllu)</h4>
+                            <p>Promovemos el trabajo cooperativo y la transferencia de conocimiento. Nuestras soluciones están diseñadas para ser accesibles, escalables y adaptables a las diversas realidades de las comunidades agrícolas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem" id="problema">
+        <div class="container">
+            <div class="section-title">
+                <h2>El Problema</h2>
+                <p>El cambio climático y los métodos de riego ineficientes amenazan la seguridad alimentaria y el futuro de las comunidades agrícolas.</p>
+            </div>
+            
+            <div class="problem-content">
+                <div class="problem-card">
+                    <i class="fas fa-tint"></i>
+                    <h3>Crisis Hídrica</h3>
+                    <p>La variabilidad climática altera los ciclos de lluvia, resultando en sequías más intensas o inundaciones repentinas que reducen la disponibilidad de agua predecible.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <i class="fas fa-tractor"></i>
+                    <h3>Brecha Tecnológica</h3>
+                    <p>La mayoría de los pequeños agricultores utilizan métodos de riego tradicionales con eficiencias que no superan el 40-50%, desperdiciando un recurso vital.</p>
+                </div>
+                
+                <div class="problem-card">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3>Vulnerabilidad Socioeconómica</h3>
+                    <p>La dependencia de cosechas exitosas y la ineficiencia hídrica generan bajos ingresos, endeudamiento y migración rural, debilitando el relevo generacional.</p>
+                </div>
+            </div>
+            
+            <div class="problem-tree">
+                <h3>Árbol del Problema</h3>
+                <div class="tree-container">
+                    <div class="tree-central">
+                        <h4>PROBLEMA CENTRAL</h4>
+                        <p>Ineficiente y desequilibrado manejo de los recursos hídricos, resultando en baja productividad agrícola y vulnerabilidad socioeconómica en comunidades rurales.</p>
+                    </div>
+                    
+                    <div class="tree-branches">
+                        <div class="causes">
+                            <h4>CAUSAS (Raíces)</h4>
+                            <ul>
+                                <li>Sistemas de riego obsoletos, ineficientes o inexistentes</li>
+                                <li>Falta de información y monitoreo preciso del agua y el suelo</li>
+                                <li>Escaso conocimiento en técnicas de riego de precisión</li>
+                                <li>Desconfianza o resistencia al cambio tecnológico</li>
+                                <li>Presión hídrica por el cambio climático</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="effects">
+                            <h4>EFECTOS (Consecuencias)</h4>
+                            <ul>
+                                <li>Bajos rendimientos y alta pérdida de cosechas</li>
+                                <li>Aumento de costos operacionales y de insumos</li>
+                                <li>Deterioro de los recursos naturales</li>
+                                <li>Migración rural y debilitamiento del tejido social</li>
+                                <li>Mayor vulnerabilidad ante eventos climáticos extremos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution" id="solucion">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestra Solución Tecnológica</h2>
+                <p>El ecosistema Ayllu Riego se divide en tres capas interconectadas para transformar la gestión hídrica desde el campo hasta la toma de decisiones.</p>
+            </div>
+            
+            <div class="solution-tabs">
+                <button class="tab-btn active" data-tab="capa1">Capa 1: El Campo</button>
+                <button class="tab-btn" data-tab="capa2">Capa 2: La Nube</button>
+                <button class="tab-btn" data-tab="capa3">Capa 3: El Usuario</button>
+            </div>
+            
+            <div id="capa1" class="tab-content active">
+                <div class="ecosystem-layer">
+                    <div class="layer-header">
+                        <div class="layer-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div>
+                            <h3>El Campo (El Corazón del Riego)</h3>
+                            <p>Recolección de datos y ejecución del riego directamente en el terreno.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="layer-components">
+                        <div class="component">
+                            <h4>Nodos de Sensores Ayllu (IoT)</h4>
+                            <p>Sensores de humedad del suelo, temperatura y conductividad eléctrica que miden en tiempo real las condiciones del suelo y el estrés hídrico.</p>
+                        </div>
+                        
+                        <div class="component">
+                            <h4>Estación Climática</h4>
+                            <p>Sensores de lluvia, viento, radiación solar y humedad ambiental para calcular la Evapotranspiración del Cultivo (ETc).</p>
+                        </div>
+                        
+                        <div class="component">
+                            <h4>Actuadores de Riego</h4>
+                            <p>Válvulas automatizadas y controladores remotos que permiten la apertura y cierre automático de los sectores de riego.</p>
+                        </div>
+                        
+                        <div class="component">
+                            <h4>Medidores de Caudal</h4>
+                            <p>Sensores de flujo instalados en la red principal para medir el volumen exacto de agua aplicada e identificar fugas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="capa2" class="tab-content">
+                <div class="ecosystem-layer">
+                    <div class="layer-header">
+                        <div class="layer-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div>
+                            <h3>La Nube (El Cerebro del Sistema)</h3>
+                            <p>Centro de procesamiento y análisis que transforma los datos brutos en decisiones accionables.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="layer-components">
+                        <div class="component">
+                            <h4>Plataforma de Datos Hídricos</h4>
+                            <p>Servidores en la nube que almacenan de forma segura todos los datos históricos y en tiempo real del campo.</p>
+                        </div>
+                        
+                        <div class="component">
+                            <h4>Motor de Inteligencia de Riego (IA/ML)</h4>
+                            <p>Algoritmos de Machine Learning que combinan datos de sensores, clima y previsiones meteorológicas para generar órdenes de riego con alta precisión.</p>
+                        </div>
+                        
+                        <div class="component">
+                            <h4>Integración de Datos Satelitales</h4>
+                            <p>Uso de índices de vegetación (NDVI, NDRE) para identificar zonas de estrés o vigor dentro del mismo cultivo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="capa3" class="tab-content">
+                <div class="ecosystem-layer">
+                    <div class="layer-header">
+                        <div class="layer-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h3>El Usuario (La Interfaz del Agricultor)</h3>
+                            <p>Accesibilidad y transferencia de conocimiento al agricultor.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="layer-components">
+                        <div class="component">
+                            <h4>Aplicación Móvil / Web</h4>
+                            <p>Interfaz simple que muestra el "Estado de Salud Hídrica" del cultivo con indicadores de semáforo (Verde, Amarillo, Rojo).</p>
+                        </div>
+                        
+                        <div class="component">
+                            <h4>Sistema de Alertas</h4>
+                            <p>Notificaciones por SMS/WhatsApp con órdenes de acción claras: "Regar el Sector 3 por 45 minutos".</p>
+                        </div>
+                        
+                        <div class="component">
+                            <h4>Módulo de Capacitación</h4>
+                            <p>Contenido multimedia y soporte técnico remoto para explicar el por qué de cada recomendación y capacitar al agricultor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values" id="valores">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Valores Corporativos</h2>
+                <p>Los pilares éticos que definen la cultura de AYLLU RIEGO y guían nuestra interacción con la comunidad y el medio ambiente</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Integridad</h3>
+                    <p>Actuamos con transparencia y ética en todas nuestras interacciones, honrando nuestros compromisos con los agricultores, socios y el medio ambiente.</p>
+                    <div class="value-connection">
+                        <strong>Conexión con la marca:</strong> Confianza en la tecnología y la comunidad.
+                    </div>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovación</h3>
+                    <p>Buscamos constantemente nuevas y mejores formas de optimizar el riego, manteniendo la curiosidad y adaptabilidad ante los desafíos climáticos.</p>
+                    <div class="value-connection">
+                        <strong>Conexión con la marca:</strong> Representado por la Gota Moderna y la tecnología.
+                    </div>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3>Respeto a la Pacha Mama</h3>
+                    <p>Valoramos y respetamos la Tierra y las tradiciones agrícolas, buscando el equilibrio entre el progreso tecnológico y el cuidado de la naturaleza.</p>
+                    <div class="value-connection">
+                        <strong>Conexión con la marca:</strong> Representado por la Hoja y las Raíces Andinas.
+                    </div>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Colaboración</h3>
+                    <p>Fomentamos un espíritu de "Ayllu" interno y externo, trabajando de la mano con los agricultores para co-crear soluciones que satisfagan sus necesidades.</p>
+                    <div class="value-connection">
+                        <strong>Conexión con la marca:</strong> Es la base del nombre AYLLU (Comunidad).
+                    </div>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Excelencia</h3>
+                    <p>Nos esforzamos por la calidad en el diseño, implementación y soporte de nuestros sistemas, garantizando un rendimiento superior y duradero.</p>
+                    <div class="value-connection">
+                        <strong>Conexión con la marca:</strong> Reflejado en la Optimización de Cada Gota.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Profile Section -->
+    <section class="user-profile-section" id="usuario">
+        <div class="container">
+            <div class="section-title">
+                <h2>Perfil del Agricultor Comunitario</h2>
+                <p>Diseñamos nuestra solución pensando en las necesidades y realidades específicas de los agricultores bolivianos</p>
+            </div>
+            
+            <div class="user-tabs">
+                <button class="user-tab-btn active" data-user-tab="demografico">Datos Demográficos</button>
+                <button class="user-tab-btn" data-user-tab="necesidades">Necesidades</button>
+                <button class="user-tab-btn" data-user-tab="motivaciones">Motivaciones</button>
+                <button class="user-tab-btn" data-user-tab="tecnologia">Relación con Tecnología</button>
+            </div>
+            
+            <div id="demografico" class="user-tab-content active">
+                <div class="user-profile-card">
+                    <div class="user-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="user-info">
+                        <h3>Datos Demográficos y Socioeconómicos</h3>
+                        <div class="demographic-details">
+                            <div class="detail-item">
+                                <div class="detail-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4>Ubicación</h4>
+                                    <p>Zonas rurales o periurbanas con acceso limitado a infraestructura hídrica formal y tecnología avanzada.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <div class="detail-icon">
+                                    <i class="fas fa-user-clock"></i>
+                                </div>
+                                <div>
+                                    <h4>Edad</h4>
+                                    <p>Generalmente, 45 años o más (con experiencia, pero resistencia potencial al cambio).</p>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <div class="detail-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <h4>Nivel Educativo</h4>
+                                    <p>Básico o técnico; su conocimiento proviene principalmente de la experiencia ancestral y práctica.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <div class="detail-icon">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </div>
+                                <div>
+                                    <h4>Ingresos</h4>
+                                    <p>Ingresos medios-bajos, dependientes directamente de la cosecha. Alta sensibilidad al precio de los insumos y la inversión inicial.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="necesidades" class="user-tab-content">
+                <div class="user-profile-card">
+                    <div class="user-avatar">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="user-info">
+                        <h3>Necesidades y Dolencias</h3>
+                        <p>Problemas que el usuario enfrenta y que AYLLU RIEGO debe resolver:</p>
+                        
+                        <div class="needs-list">
+                            <div class="need-item">
+                                <h4><i class="fas fa-tint"></i> Agua Escasa</h4>
+                                <p>"No sabemos con exactitud cuánta agua tenemos o cuándo regar. A veces desperdiciamos, a veces se nos seca la cosecha."</p>
+                            </div>
+                            
+                            <div class="need-item">
+                                <h4><i class="fas fa-cloud-sun"></i> Incertidumbre</h4>
+                                <p>"El clima ha cambiado mucho. Las técnicas de mis abuelos ya no funcionan tan bien como antes. No puedo predecir la cosecha."</p>
+                            </div>
+                            
+                            <div class="need-item">
+                                <h4><i class="fas fa-chart-line"></i> Altos Costos</h4>
+                                <p>"El combustible para bombear o la mano de obra para regar es cara, y si la cosecha se pierde, no recuperó la inversión."</p>
+                            </div>
+                            
+                            <div class="need-item">
+                                <h4><i class="fas fa-cogs"></i> Resistencia a la Tecnología</h4>
+                                <p>"Las máquinas son muy complicadas y si se dañan, ¿quién me ayuda? Necesito algo que yo pueda entender y reparar."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="motivaciones" class="user-tab-content">
+                <div class="user-profile-card">
+                    <div class="user-avatar">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <div class="user-info">
+                        <h3>Motivaciones y Deseos</h3>
+                        <p>Lo que impulsa al agricultor a buscar soluciones como la nuestra:</p>
+                        
+                        <div class="motivations-list">
+                            <div class="motivation-item">
+                                <div class="motivation-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div>
+                                    <h4>Estabilidad</h4>
+                                    <p>Asegurar la cosecha año tras año para el sustento familiar y la permanencia en la tierra.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="motivation-item">
+                                <div class="motivation-icon">
+                                    <i class="fas fa-recycle"></i>
+                                </div>
+                                <div>
+                                    <h4>Sostenibilidad</h4>
+                                    <p>Usar el agua de manera responsable para que quede suficiente para las próximas generaciones.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="motivation-item">
+                                <div class="motivation-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div>
+                                    <h4>Simplicidad</h4>
+                                    <p>Quiere soluciones efectivas, pero que sean fáciles de usar e integrar en sus prácticas actuales.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="motivation-item">
+                                <div class="motivation-icon">
+                                    <i class="fas fa-crown"></i>
+                                </div>
+                                <div>
+                                    <h4>Reconocimiento</h4>
+                                    <p>Ser un líder en su comunidad por adoptar prácticas modernas que mejoran la vida de todos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="tecnologia" class="user-tab-content">
+                <div class="user-profile-card">
+                    <div class="user-avatar">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="user-info">
+                        <h3>Relación con la Tecnología</h3>
+                        
+                        <div class="tech-profile">
+                            <div class="tech-level">
+                                <h4><i class="fas fa-chart-bar"></i> Nivel de Familiaridad</h4>
+                                <p>Bajo a medio. Puede usar un teléfono móvil básico, pero no está familiarizado con dashboards de datos, apps complejas o sensores.</p>
+                            </div>
+                            
+                            <div class="tech-attitude">
+                                <h4><i class="fas fa-brain"></i> Actitud hacia la Tecnología</h4>
+                                <p>Cautelosa, pero abierta a la prueba. Valora la tecnología si ve que funciona inmediatamente y es avalada por sus pares.</p>
+                            </div>
+                            
+                            <div class="tech-requirements">
+                                <h4><i class="fas fa-clipboard-check"></i> Requisitos para Adopción</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Facilidad de uso e instalación</li>
+                                    <li><i class="fas fa-check"></i> Bajo mantenimiento</li>
+                                    <li><i class="fas fa-check"></i> Resultados visibles rápidamente</li>
+                                    <li><i class="fas fa-check"></i> Soporte técnico accesible</li>
+                                    <li><i class="fas fa-check"></i> Validación por otros agricultores</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Model Section -->
+    <section class="business-model" id="modelo">
+        <div class="container">
+            <div class="section-title">
+                <h2>Modelo de Negocio</h2>
+                <p>Una propuesta sostenible que genera valor para los agricultores, la comunidad y el medio ambiente.</p>
+            </div>
+            
+            <div class="business-tabs">
+                <button class="business-tab-btn active" data-business-tab="segmentos">Segmentos de Clientes</button>
+                <button class="business-tab-btn" data-business-tab="propuesta">Propuesta de Valor</button>
+                <button class="business-tab-btn" data-business-tab="ingresos">Fuentes de Ingresos</button>
+                <button class="business-tab-btn" data-business-tab="recursos">Recursos Clave</button>
+                <button class="business-tab-btn" data-business-tab="socios">Socios Clave</button>
+            </div>
+            
+            <div id="segmentos" class="business-tab-content active">
+                <div class="business-content-card">
+                    <h3><i class="fas fa-users"></i> Segmentos de Clientes</h3>
+                    <div class="segment-cards">
+                        <div class="segment-card">
+                            <div class="segment-icon">
+                                <i class="fas fa-tractor"></i>
+                            </div>
+                            <h4>Agricultores Comunitarios</h4>
+                            <p>Cooperativas agrícolas, asociaciones de regantes y grupos de agricultores familiares en zonas rurales. (El usuario principal, Don Pedro/Doña Rosa).</p>
+                        </div>
+                        
+                        <div class="segment-card">
+                            <div class="segment-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h4>ONGs / Gobiernos Locales</h4>
+                            <p>Entidades que financian proyectos de desarrollo rural, hídrico y seguridad alimentaria.</p>
+                        </div>
+                        
+                        <div class="segment-card">
+                            <div class="segment-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <h4>Agroindustria Responsable</h4>
+                            <p>Empresas que buscan certificar la sostenibilidad y la eficiencia hídrica de sus cadenas de suministro con pequeños productores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="propuesta" class="business-tab-content">
+                <div class="business-content-card">
+                    <h3><i class="fas fa-gem"></i> Propuesta de Valor</h3>
+                    <div class="value-proposition">
+                        <div class="vp-main">
+                            <h4>Certeza Hídrica y Productividad Sostenible</h4>
+                            <p>AYLLU RIEGO ofrece sistemas de riego inteligente que garantizan el <strong>uso óptimo del agua (95%+ de eficiencia)</strong> mediante la IA, reduciendo los costos operativos y aumentando la calidad y cantidad de la cosecha.</p>
+                        </div>
+                        
+                        <div class="vp-differentiators">
+                            <h5>Nuestros diferenciadores:</h5>
+                            <div class="differentiator">
+                                <i class="fas fa-robot"></i>
+                                <div>
+                                    <h6>Tecnología de Punta</h6>
+                                    <p>IA, IoT y sensores de última generación adaptados al contexto rural.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="differentiator">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <div>
+                                    <h6>Capacitación Cercana</h6>
+                                    <p>Enfoque Ayllu que combina tecnología con transferencia de conocimiento local.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="differentiator">
+                                <i class="fas fa-handshake"></i>
+                                <div>
+                                    <h6>Fácil Adopción</h6>
+                                    <p>Soluciones diseñadas específicamente para la realidad del agricultor boliviano.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="ingresos" class="business-tab-content">
+                <div class="business-content-card">
+                    <h3><i class="fas fa-money-bill-wave"></i> Fuentes de Ingresos</h3>
+                    <div class="revenue-sources">
+                        <div class="revenue-source">
+                            <div class="revenue-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="revenue-info">
+                                <h4>Venta de Hardware e Instalación</h4>
+                                <p>Ingreso inicial por la venta e instalación del Ecosistema de Sensores y Actuadores.</p>
+                                <div class="revenue-details">
+                                    <span class="revenue-tag">Ingreso inicial único</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="revenue-source">
+                            <div class="revenue-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <div class="revenue-info">
+                                <h4>Suscripción (SaaS)</h4>
+                                <p>Tarifa mensual/anual por el acceso al <strong>Motor de IA y Monitoreo Hídrico (Capa 2)</strong>. Este es el ingreso recurrente clave.</p>
+                                <div class="revenue-details">
+                                    <span class="revenue-tag">Ingreso recurrente</span>
+                                    <span class="revenue-tag">Modelo SaaS</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="revenue-source">
+                            <div class="revenue-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="revenue-info">
+                                <h4>Servicios de Consultoría</h4>
+                                <p>Ingresos por estudios de optimización hídrica, diseño de redes de riego y proyectos para terceros (ONGs/Gobierno).</p>
+                                <div class="revenue-details">
+                                    <span class="revenue-tag">Servicios profesionales</span>
+                                    <span class="revenue-tag">Proyectos B2B</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="recursos" class="business-tab-content">
+                <div class="business-content-card">
+                    <h3><i class="fas fa-tools"></i> Recursos Clave</h3>
+                    <div class="resources-grid">
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <h4>Recursos Humanos</h4>
+                            <p>Ingenieros agrónomos especializados en riego, desarrolladores de IA/IoT y técnicos de campo bilingües (español/lenguas nativas).</p>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Recursos Tecnológicos</h4>
+                            <p>El algoritmo de IA propietario para la optimización hídrica (El Motor de Riego).</p>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-piggy-bank"></i>
+                            </div>
+                            <h4>Recursos Financieros</h4>
+                            <p>Capital para el desarrollo inicial de hardware y el financiamiento de proyectos a comunidades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="socios" class="business-tab-content">
+                <div class="business-content-card">
+                    <h3><i class="fas fa-handshake"></i> Socios Clave</h3>
+                    <div class="partners-grid">
+                        <div class="partner-card">
+                            <div class="partner-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <h4>Proveedores de Hardware</h4>
+                            <p>Fabricantes de sensores, válvulas y componentes IoT a gran escala (para asegurar costos competitivos).</p>
+                        </div>
+                        
+                        <div class="partner-card">
+                            <div class="partner-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <h4>Instituciones Financieras y Gubernamentales</h4>
+                            <p>Bancos de desarrollo (BID, CAF) y Ministerios de Agricultura/Ambiente (para acceso a subsidios y líneas de crédito para agricultores).</p>
+                        </div>
+                        
+                        <div class="partner-card">
+                            <div class="partner-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h4>ONGs y Organizaciones de Desarrollo Rural</h4>
+                            <p>Socios que facilitan el acceso y la confianza en las comunidades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>AYLLU RIEGO</h3>
+                    <p>"Cultivando Futuro, Optimizando Cada Gota"</p>
+                    <p>Transformamos la agricultura a través del riego de precisión, reconocida por su impacto social y ambiental positivo.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#mision-vision">Misión y Visión</a></li>
+                        <li><a href="#problema">El Problema</a></li>
+                        <li><a href="#solucion">Nuestra Solución</a></li>
+                        <li><a href="#valores">Nuestros Valores</a></li>
+                        <li><a href="#usuario">Para el Agricultor</a></li>
+                        <li><a href="#modelo">Modelo de Negocio</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> La Paz - Bolivia</p>
+                    <p><i class="fas fa-university"></i> Universidad Mayor de San Andrés</p>
+                    <p><i class="fas fa-user-graduate"></i> Asignatura: Emprendimiento e Innovación Tecnológica SIS-265</p>
+                    <p><i class="fas fa-chalkboard-teacher"></i> Docente: M.Sc. Juan Cayoja Cortez</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 AYLLU RIEGO - Sistema de Riego para Cultivos asistido por IA. Todos los derechos reservados.</p>
+                <p>Integrantes: Huata Flores Teodosio, Isnado Pimentel Edgar, Pilco Pinto Lizbeth, Quispe Carrillo Adriana Maribel, Salcedo Ayala Luis Ruben</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
